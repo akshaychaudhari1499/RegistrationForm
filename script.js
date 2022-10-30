@@ -7,7 +7,7 @@ function validateForm() {
     let gender = document.getElementsByName("gender")
     let error = false
 
-    if (firstName.length >= 3 && isNaN(firstName)) {
+    if (firstName.length >= 3 && !(firstName.match(/\d+/g)) ) {
         document.getElementById('first-name-valid').style.display = 'block'
         document.getElementById('first-name-invalid').style.display = 'none'
     } else {
@@ -16,7 +16,7 @@ function validateForm() {
         error = true
     }
 
-    if (lastName.length >= 3 && isNaN(lastName)) {
+    if (lastName.length >= 3 && !(lastName.match(/\d+/g))) {
         document.getElementById('last-name-valid').style.display = 'block'
         document.getElementById('last-name-invalid').style.display = 'none'
     } else {
