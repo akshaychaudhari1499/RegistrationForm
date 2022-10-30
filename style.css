@@ -1,0 +1,39 @@
+.registration-form {
+    width: 1000px;
+    margin: 20px auto;
+
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+#genderbtn {
+    display: flex;
+    padding: 5px;
+}
+
+#gendername {
+    display: grid;
+    align-items: center;
+    padding: 5px;
+    justify-items: center;
+    width: 400px;
+    text-align: center;
+
+}
+#gR1 ,#gR2 ,#gR3{
+margin: 5px;
+}
+
+.middle {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#cnt {
+    width: 400px;
+    text-align: center;
+
+}
